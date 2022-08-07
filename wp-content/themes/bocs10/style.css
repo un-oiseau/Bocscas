@@ -1,0 +1,669 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Bocs10 Theme
+Author: L. Tsat.
+Version: 1.0
+*/
+.custom-logo-link {
+    padding: 5px 0;
+}
+.content-links {
+    background: #FFFFFF;
+    padding: 15px 20px;
+}
+.content-links .h4 {
+    color: #1B264F;
+    margin-bottom: 15px;
+}
+.content-links .toggller {
+    width: 16px;
+    height: 16px;
+    background: url("images/sort-down.svg") center no-repeat;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all .3s;
+}
+.content-links .toggller.open {
+    background: url("images/sort-down.svg") center no-repeat;
+    transform: rotate(180deg);
+}
+.content-links ul li {
+    font-family: "OpenSans";
+    font-size: 16px;
+    line-height: 22px;
+    color: #302B27;
+    padding-left: 0;
+    padding-right: 60px;
+    display: inline-block;
+}
+.content-links ul li::before {
+    background: transparent;
+    left: inherit;
+    top: 0px;
+    right: 27px;
+    content: url('images/line.svg');
+}
+.content-links ul li:last-child::before {
+    display: none;
+}
+.content-links ul li a {
+    color: #302B27;
+    font-weight: 400;
+}
+.content-links ul li a:hover {
+    color: #274690;
+}
+.collapse-box {
+    position: relative;
+}
+.inner-content .expert-box .flex-box {
+    flex-direction: column;
+}
+.inner-content .expert-card {
+    align-self: baseline;
+    margin-bottom: 15px;
+}
+.inner-content .expert-box::after {
+    top: inherit;
+    bottom: -38px;
+}
+.expert-box {
+    padding: 30px;
+    position: relative;
+    background: #FFFFFF;
+}
+.expert-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.expert-img {
+    margin-right: 25px;
+    width: 120px;
+}
+.expert-info {
+    min-width: 200px;
+}
+.expert-box::after {
+    content: url("images/quotes-blue-sm.svg");
+    position: absolute;
+    top: -30px;
+    right: 30px;
+}
+.slot-main {
+    margin-bottom: 40px;
+}
+.slot-page .slot-img {
+    position: relative;
+    height: 100%;
+}
+.slot-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.slot-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.slot-img .btn-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slot-img .btn-group button {
+    display: block;
+    width: 280px;
+    height: 64px;
+}
+.slot-img .btn-group button:first-child {
+    margin-bottom: 15px;
+}
+.game-desc > div:not(:first-child) {
+    padding: 10px;
+}
+
+.game-desc > .text-small::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.game-desc .offer {
+    padding: 10px;
+    position: relative;
+    border-right: 1px solid #EDF2F4;
+    min-height: 99px;
+}
+.game-desc table tr td {
+    padding: 7px 20px;
+}
+.game-desc table tr td:first-child {
+    color: #313131;
+}
+.game-logo img{
+    display: block;
+    margin: 0 auto;
+}
+.triple-image img{
+    display: inline-block;
+    width: 32%;
+}
+.triple-image img:not(:last-child) {
+    margin-right: 25px;
+}
+.list-card {
+    background: #FFFFFF !important;
+    margin: auto;
+}
+.four-cards {
+    background: #EBF0FF;
+    padding: 20px;
+}
+.four-cards-item{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start !important;
+}
+.four-cards-item:first-child {
+    justify-content: start;
+    margin-top: 0;
+}
+.four-cards img {
+    max-width: 80px;
+}
+.four-cards .btn-cas {
+    margin-top: 8px;
+}
+.four-cards .item-desc:nth-of-type(1n+0){
+    margin-right: 20px;
+    margin-left: 15px;
+}
+.item-desc p {
+    margin-bottom:6px;
+}
+.slot-page h1 {
+    margin-bottom: 15px;
+}
+.slot-page .star {
+    background: url("images/star.svg") 100% / 100% no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+.slot-page .rate-stars span:first-child {
+    position: relative;
+    top: -2px;
+    color: #274690;
+}
+.brand-page .pro-con hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.brand-page .list-card table tr:first-child td:first-child {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Oswald Bold"
+}
+.brand-page .list-card table tr:first-child td:last-child {
+    font-size: 16px;
+    line-height: 22px;
+}
+.brand-page .list-card table tr td {
+    padding-top: 17px;
+    padding-bottom: 5px;
+}
+.brand-page .list-card table tr:not(:last-child) td {
+    border-bottom: 1px solid rgba(194,194,194,0.5);
+}
+.brand-page .list-card table .text-right span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+.brand-page .four-cards {
+    margin-top: 40px;
+}
+.brand-page .four-cards img {
+    max-width: 140px;
+}
+.brand-page .casino-review {
+    margin-bottom: 40px;
+}
+.brand-page .game-logo img {
+    width: 90%;
+    margin-bottom: 20px;
+}
+.checked-list li::before {
+    content: url('images/check.svg');
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    top: 2px;
+}
+.unchecked-list li::before {
+    content: url('images/cancel.svg');
+    background: transparent;
+    top: 2px;
+}
+.checked-list li,
+.unchecked-list li {
+    padding-left: 24px;
+}
+.brand-page ul li {
+    margin-bottom: 8px;
+}
+.brand-page .pro-con p:first-of-type{
+    color:#302B27;
+}
+.toggller {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url("images/down-arrow.svg") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.toggller.open {
+    background: url("images/close.svg") center no-repeat;
+    background-size: contain;
+}
+.bg-light {
+    padding: 20px;
+    background: #FFFFFF;
+}
+.linked a {
+    text-decoration: none;
+}
+.linked img {
+    display: block;
+    margin: 0 auto;
+}
+.ordered_list ol {
+    counter-reset: item;
+}
+.ordered_list> li {
+    padding: 20px;
+    background: #FFFFFF;
+    padding-left: 60px;
+    list-style-type: none;
+    counter-increment: item;
+    position: relative;
+    min-height: 30px;
+    margin-bottom: 15px;
+}
+.ordered_list li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-family: "Poppins Bold";
+    color: #274690;
+    background: #EBF0FF;
+    z-index: 10;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.important_info {
+    position: relative;
+    background: #EBF0FF;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 37px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.helpful_info {
+    position: relative;
+    background: #EBF0FF;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 94px;
+}
+.helpful_info h6 {
+    margin-bottom: 12px;
+}
+.helpful_info p::before {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(images/email.svg) no-repeat;
+    content: "";
+    left: 20px;
+}
+.pros_cons {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.green-list, .red-list {
+    background: #FFFFFF;
+    padding: 38px 30px;
+}
+.green-list {
+    border-bottom: 10px solid #8DC640;
+}
+.red-list {
+    border-bottom: 10px solid #E24C4B;
+}
+.green-list ul li::before, .red-list ul li::before {
+    display: none;
+}
+.green-list .h6 {
+    color: #8DC640;
+    margin-bottom: 30px;
+}
+.red-list .h6 {
+    color: #E24C4B;
+    margin-bottom: 30px;
+}
+.pros_cons .h6 {
+    text-align: center;
+    position: relative;
+    padding-left: 60px;
+    margin-top: -18px;
+}
+.pros_cons .h6 span {
+    background: url("images/checked.svg");
+    width: 44px;
+    height: 44px;
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.pros_cons .col-6 {
+    min-height: auto;
+}
+.pros_cons .col-6>div {
+    height: 100%;
+}
+.pros_cons .red-list .h6 span {
+    background: url("images/canceled.svg");
+}
+.pros_cons ul li {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.top-games, .top_3 {
+    counter-reset: item;
+}
+.top-games .cas-head {
+    padding: 20px 40px;
+}
+.cas-top-item {
+    padding: 24px 40px;
+}
+.top-games .cas-top-item {
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    transition: all .3s;
+    counter-increment: item;
+    position: relative;
+}
+.top_3 .cas-head {
+    counter-increment: item;
+    position: relative;
+    padding-left: 80px;
+}
+.top-offer .cas-head {
+    padding-left: 80px;
+    padding-right: 46px;
+}
+.top-offer .cas-head::before {
+    content: url("images/medal.svg");
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.top-offer .cas-head::after {
+    content: url("images/canada.svg");
+    position: absolute;
+    top: 26px;
+    right: 40px;
+}
+.top_3 .cas-head::before {
+    content: counter(item);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "Oswald Bold";
+    font-size: 20px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    font-family: 'Oswald Bold', sans-serif;
+    color: #FFFFFF;
+    z-index: 1;
+    background: #274690;
+    text-align: center;
+}
+.top-games .cas-item {
+    margin-bottom: 10px;
+}
+.top-games .cas-top-item::before {
+    content: counter(item);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Oswald Bold', sans-serif;
+    color: #FFFFFF;
+    z-index: 1;
+    background: #274690;
+    text-align: center;
+}
+.cas-top-item .rate-stars {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #274690;
+}
+.cas-top-item .star {
+    background: url(images/star.svg) 100% / 100% no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.top-games ul li {
+    margin-bottom: 8px;
+}
+.top-offer .four-cards {
+    padding: 20px;
+    margin-bottom: 12px;
+}
+.top-offer .four-cards img {
+    max-width: 77px;
+}
+.top-offer .four-cards .item-desc:nth-of-type(1n+0) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.additional_resources .article-item {
+    background: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.additional_resources .h6 {
+    margin-bottom: 12px;
+}
+.additional_resources a {
+    color: #302B27;
+    text-decoration: none;
+}
+.additional_resources .article-item p {
+    color: #2B2D42;
+}
+.additional_resources .article-item:hover {
+    background: #EBF0FF;
+    transition: all(0.3s);
+}
+.additional_resources .article-item:hover a {
+    color: #274690;
+    text-decoration: underline;
+}
+.question-box {
+    padding: 20px;
+    background: #FFFFFF;
+    min-height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+.question-box .h7 {
+    margin-bottom: 12px;
+}
+.question-box:hover .h7 {
+    color: #274690;
+}
+.hovered {
+    transition: all .3s;
+    cursor: pointer;
+}
+.hovered:hover {
+    background: #EBF0FF;
+}
+.hovered:hover * {
+    color: #302B27;
+}
+.top-4 {
+   margin-top: 34px;
+   overflow-x: auto;
+}
+.top-4 .four-cards {
+   padding: 20px 30px;
+   min-width: 430px;
+   margin-bottom: 60px;
+}
+.top-4 .cas-hat {
+    justify-content: center;
+}
+.top-4 .cas-desc {
+    padding: 0px 60px 20px;
+    margin-top: 15px;
+}
+.top-4 .four-cards-item {
+    justify-content: space-between;
+}
+.top-4 .four-cards .btn-cas {
+    margin-left: auto;
+}
+.faq-item {
+    position: relative;
+    border-bottom: 2px solid #C2C2C2;;
+}
+.faq-item .h5 {
+    padding-left: 37px;
+    margin-top: 20px;
+}
+.faq-item .toggller {
+    right: inherit;
+    left: 0;
+    top: 8px;
+}
+.faq-answer {
+    display: none;
+    padding-bottom: 20px;
+}
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+.toggller {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url("images/down-arrow.svg") center no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.toggller.open {
+    background: url("images/close.svg") center no-repeat;
+    background-size: contain;
+}
+blockquote {
+    line-height: 30px;
+    font-weight: 700;
+    position: relative;
+    padding: 40px 330px 40px 40px;
+    background: #EBF0FF;
+    position: relative;
+}
+blockquote p {
+    font-family: "Oswald Bold";
+    font-size: 22px;
+    line-height: 31px;
+    color: #1B264F;
+    margin-bottom: 0;
+}
+blockquote::after {
+    content: url("images/quotes.png");
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+    width: 290px;
+    height: 100%;
+    position: absolute;
+}
+.cas-item {
+    margin-bottom: 20px;
+}
+.cas-head {
+    background: #EBF0FF;
+    padding: 26px;
+}
+.cas-body {
+    padding: 20px 0;
+}
+.cas-spec p {
+    margin-bottom: 15px;
+    font-family: "Oswald";
+}
+.cas-spec b {
+    display: inline-block;
+    margin-left: 15px;
+    font-family: "Oswald Bold";
+}
+.cas-spec img {
+    display: inline-block;
+    margin: 0 8px;
+    max-width: 22px;
+}
+.cas-spec .btn-cas {
+    margin-top: 34px;
+    padding: 18px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Oswald Bold', sans-serif;
+    font-weight: 700;
+    width: 280px;
+}
+.peaky-box .cas-spec table {
+    margin-bottom: 30px;
+}
+.peaky-box .cas-spec table td {
+    padding-bottom: 15px;
+}
